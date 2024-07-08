@@ -32,7 +32,7 @@ class NYTAPI:
             print(f"Failed to fetch articles. Status code: {response.status_code}")
 
 if __name__ == "__main__":
-    # Provide the path to the file containing your API key
+    # Provide the path to the file containing user API key
     api_key_file = 'NYTKey.txt'
     nyt_api = NYTAPI(api_key_file)
     section = input("Enter section (e.g., arts, business, sports): ").lower()  # Prompt user to input the section
